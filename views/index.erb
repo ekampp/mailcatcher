@@ -2,10 +2,9 @@
 <html class="mailcatcher">
 <head>
   <title>MailCatcher</title>
-  <base href="<%= settings.prefix.chomp("/") %>/">
-  <link href="favicon.ico" rel="icon">
-  <script src="<%= asset_path("mailcatcher.js") %>"></script>
-  <link rel="stylesheet" href="<%= asset_path("mailcatcher.css") %>">
+  <link href="<%= http_prefix %>favicon.ico" rel="icon" />
+  <%= stylesheet_tag "mailcatcher" %>
+  <%= javascript_tag "mailcatcher" %>
 </head>
 <body>
   <header>
